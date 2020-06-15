@@ -1,0 +1,212 @@
+*,
+*::before,
+*::after {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Lora', serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #DF7A39;
+
+  --fs-h1: 2rem;
+  --fs-h2: 1.50rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+
+/**Shadow for image**/
+  --bs: 0.25em 0.25em 0.75am rgba(0,0,0,.25),
+        0.125em 0.125em, 0.27em rgba(0,0,0,.15)
+
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.50rem;
+    --fs-body: 1rem;
+  }
+}
+
+
+
+
+/*General styles */
+
+
+div {
+  background-color: #F3EBE3;
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/*Typography */
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 { font-size: var(--fs-h1)}
+h2 { font-size: var(--fs-h2)}
+h3 { font-size: var(--fs-h3)}
+
+
+.roles__skill {
+  border-radius: 25px;
+  background: #DF7A39;
+  width: px;
+}
+
+
+
+/*Structure */
+
+nav {
+  background: #F3EBE3;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h2);
+  font-weight: bold;
+  letter-spacing: .25rem;
+  line-height: 80px;
+  padding: 0 100px:
+}
+
+/*RESPONSIVE LOGO TO ONLY APPEAR FOR BIGGER SCREENS*/
+@media (max-width: 800px) {
+  .logo__image {
+  display: none;
+  }
+}
+
+
+nav ul{
+  float: left;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+.checkbtn{
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 800px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 30px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: left;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+    nav ul li a{
+      font-size: 20px;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+}
+
+/*----------INTRODUCTION-----------*/
+
+.intro {
+  background: #F3EBE3;
+  font-family: var(--ff-secondary);
+}
+.intro__title{
+      line-height: 1.5;
+      margin-bottom: 20px;
+}
+.intro__subtitle{
+  font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.btn-primary{
+    background: #DF7A39;
+    border-radius: 20px;
+    color: white;
+    font-family: var(--ff-primary);
+    padding: 9px 12px;
+    margin-right: 20px;
+}
+.btn-secondary{
+    border-radius: 20px;
+    border: 2px solid #DF7A39;
+    color: #DF7A39;
+    font-family: var(--ff-primary);
+    padding: 7px 20px;
+}
+.intro__img{
+  margin: 20px;
+}
+.arrowicon{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
