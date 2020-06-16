@@ -274,6 +274,7 @@ text-align: center;
 .message{
   display: inline-block;
   margin: 0;
+  width: 100%;
   background-color: #DF7A39;
   color: white;
   padding: 10px 5px;
