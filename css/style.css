@@ -287,14 +287,19 @@ text-align: center;
   text-align: center;
 }
 
+footer {
+  text-align: center;
+}
+
 .footer-text{
   font-weight: normal;
-  width: 70%;
+  /* width: 70%; */
+  margin: 0 20%;
   text-align: center;
 }
 
 .footer-container > div {
-  /* margin: 0px 1px; */
+  margin: 15px 0px;
   background: #DF7A39;
   color: white;
   width: 40px;
