@@ -4,47 +4,70 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Alice Kim | Inspo Cloud</title>
+
+<!--STYLESHEET-->
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"
+      integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous">
+
+<!--FONT-->
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;562&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="css/style.css">
+
    </head>
    <body>
-      <nav>
-         <div class="logo">
-            <img src="../images/AKlogo.png" alt="">
-            <p class="logoname">ALICE KIM</p>
-         </div>
-         <a href="#work">WORK</a>
-         <a href="#resume">RESUME</a>
-         <a href="#about">ABOUT</a>
-         <a href="#contactme">CONTACT ME</a>
+
+     <nav>
+       <div class="logo__image">
+       <img src="images/AKlogo.png" alt=""></div>
+
+       <input type="checkbox" id="check">
+       <label for="check" class="checkbtn">
+         <i class="fa fa-bars"></i>
+       </label>
+         <label class="logo">
+            ALICE KIM
+         </label>
+          <ul>
+            <li><a class="active"><a href="#work">WORK</a></li>
+            <li><a class="#"><a href="#">RESUME</a></li>
+            <li><a class="#"><a href="#">ABOUT</a></li>
+            <li><a class="contactme"><a href="#">CONTACT ME</a></li>
+          </ul>
       </nav>
-      <header>
-         <img src="../images/inspocloudmobile.png" alt="Inspo cloud mobile dashboard">
-         <h2>Inspo Cloud</h2>
-         <p>A cloud storage web App for Designers.</p>
-         <div class="roles">
-            <p>Research</p>
-            <p>User Testing</p>
-            <p>UX</p>
-            <p>UI Design</p>
-            <p>Prototyping</p>
-         </div>
-         <button type="button">View Prototype</button>
-      </header>
+
+
+      <section>
+         <img src="images/inspocloud/dashboard_iphone-mockup.png" alt="Inspo cloud mobile dashboard" class="project__img">
+         <h1>Inspo Cloud</h1>
+         <h3>A cloud storage web App for Designers.</h3>
+            <h4><span>Research</span>
+             <span>User Testing</span>
+             <span>UX</span>
+             <span>UI Design</span>
+             <span>Prototyping</span></h4>
+         <a href="https://invis.io/5UW143FTS76#/405320912_Sign_Up_Start_Final_Screen">View Prototype</a>
+      </section>
       <main>
          <!--SUMMARY AND PROBLEM STATEMENT SECTION-->
          <section>
-            <h3><u>Summary</u></h3>
+            <h2>Summary</h2>
             <p><b>Inspo cloud is a designer and creators focused cloud storage product. Its aim is to provide users with the freedom to organize their work and ideas with an engaging experience than any other cloud storage product.</b><br><br>
                A group of designers that uses cloud storage daily expressed frustrations with their current platforms. Inspo Cloud is to introduce the tools to give them more control and user-friendly features focused on their needs.
             </p>
-            <h3><u>Problem</u></h3>
+            <h2>Problem</h2>
             <h4>There’s no cloud storage in the market that fits Designers’ needs.</h4>
             <p>According to a user survey with participants of designers, there were expressed frustrations with the big-name cloud storage in the market. Design files are unable to preview unless downloaded from the cloud which adds another step and takes time. Also, users had difficulties finding files if they forgot the file name. This survey showed that there was an opportunity to improve viewing and organizing features catering to designers.</p>
             <img src="../images/googledrive-screenshot.png" alt="Screenshot of Google Drive not displaying preview of design files">
             <p>Thumbnails for design files like Figma, Sketch, and Illustrator on Google Drive which makes it hard for users to quickly find a file.</p>
          </section>
          <!--SOLUTION SUMMARY SECTION-->
-         <section>
-            <h3><u>Solutions</u></h3>
+           <section class="soultion" id="highlight">
+            <h2>Solutions</h2>
             <h4>Providing more visuals means quick access.</h4>
             <p>By allowing all design files to display a thumbnail preview, users can easily identify what they are looking for. Along with keyword search and thumbnail preview, users can open the file assuring that it’s the correct file.</p>
             <img src="../images/inspocloud-searchresult.png" alt="Dashboard with search result and preview of the design file.">
@@ -54,13 +77,13 @@
          </section>
          <!--PROCESS SECTION-->
          <section>
-            <h3><u>Process</u></h3>
-            <h4>Research</h4>
+            <h2>Process</h2>
+            <h3>Research</h3>
             <p>Online survey on cloud storage usage provided insights from designers.<br>
                More than 70% of the participants are working full-time and use cloud storage for their work.<br>
                <b>Takeaways from Survey Analysis</b><br>
             </p>
-            <ul>
+            <div class"visible-list"><ul>
                <li>100% of the participants use cloud storage</li>
                <li>Designers are uploading design files into the cloud</li>
                <li>Should be able to preview files no matter what the file type is</li>
@@ -68,21 +91,26 @@
                <li>Easier ways to organize</li>
                <li>More visuals and creative options to organize files</li>
                <li>Better layouts to view files</li>
-            </ul>
+            </ul></div>
             <a href="inspocloud-survey">View full survey question</a>
+          </section>
+
+
             <!--COMPETITIVE ANALYSIS-->
-            <p><b>Competitive Analysis</b><br>
+            <h3>Competitive Analysis</h3>
                Top 3 most used cloud storage platforms from the online survey were compared.
             </p>
             <img src="../images/top3_competitive_analysis.png" alt="Showing top 3 used cloud storage platforms by online survey participants">
             <p>These cloud storage services are designed for large audiences and don't fully provide features catered for designers. The options for viewing and creating new files are limited and lack quality features for designers. </p>
-            <button type="button">Read in-depth competitive Analysis</button>
+            <a href="#">Read in-depth competitive Analysis</a>
+
+
             <!--USER PERSONA-->
-            <p><b>User Personas</b><br>
+            <h3>User Personas</h3>
                Personas were created with the most important goals and frustrations for our target audience with user research and competitive analysis.
             </p>
-            <div class="persona">
-               <img src="../images/inspocloud-PersonaKatie.png" alt="Persona Image of Katie">
+            <section class="katie" id="highlight">
+               <img src="../images/inspocloud-PersonaKatie.png" alt="Persona Image of Katie" id="persona-img">
                <p><b>Katie</b><br>28 yo, Graphic Designer, Los Angeles</p>
                <p>“I’m working with several different clients on similar projects so it’s important to stay organized and not mix up my flies.”</p>
                <p>Katie’s schedule is packed with several design projects with different clients. She uses cloud storage to share and send her work to the client. It’s super important to keep files organized and that her clients receive the fils and have access to them.</p>
@@ -98,9 +126,11 @@
                   <li>No previews of design files</li>
                   <li>Not knowing when the client viewed the file after sending a shareable link</li>
                </ul>
-            </div>
-            <div class="persona">
-               <img src="../images/inspocloud-PersonaRay.png" alt="Persona Image of Ray">
+            </section>
+
+
+            <section class="ray" id="highlight">
+               <img src="../images/inspocloud-PersonaRay.png" alt="Persona Image of Ray" id="persona-img">
                <p><b>Ray</b><br>32 yo, Interior Designer, New York City</p>
                <p>“Clicking through piles of design inspirational pictures takes too long, I need to view all the files and create a board quickly.”</p>
                <p>Ray is constantly looking out for new trends online and in-person. He collects photos of all the design details, prints, tags, and anything else that he wants to show his team. He uploads them to the cloud storage to share with his team, but there are too many photos to sort through.</p>
@@ -116,8 +146,8 @@
                   <li>Using other programs to create boards</li>
                   <li>Unsure who has editing access</li>
                </ul>
-            </div>
-         </section>
+            </section>
+
          <!--DESIGN SECTION-->
          <section>
             <h3><u>Design</u></h3>
@@ -125,28 +155,28 @@
             <p><b>Information Architecture</b><br>
                I sketched out user flows to show the simplest way a user can approach tasks on Inspo Cloud.
             </p>
-            <img src="../images/inspocloud-handsketchuserflow.jpg" alt="Hand-sketched user flow">
+            <img src="images/inspocloud-handsketchuserflow.jpg" alt="Hand-sketched user flow">
             <p>After hand sketching and mapping out several user-flows, they are prioritized again on digital user flows.</p>
-            <img src="../images/inspocloud-digitaluserflow.png" alt="digital user flow">
+            <img src="images/inspocloud-digitaluserflow.png" alt="digital user flow">
             <!--SITE MAP-->
             <p><b>Site Map</b><br>
                What other screens are involved and how do they all structure together?
                The site map was an essential part of the design process for planning several ways a user can access their files on each screen.
             </p>
-            <img src="../images/inspocloud-sitemap.png" alt="Site map">
+            <img src="images/inspocloud-sitemap.png" alt="Site map">
             <p><b>Wireframes</b><br>
                Initial sketches of screen design.
             </p>
-            <img src="../images/inspocloud/wireframe_sketch1.png" alt="Hand-sketched wireframe1">
-            <img src="../images/inspocloud/wireframe_sketch2.png" alt="Hand-sketched wireframe2">
+            <img src="images/inspocloud/wireframe_sketch1.png" alt="Hand-sketched wireframe1">
+            <img src="images/inspocloud/wireframe_sketch2.png" alt="Hand-sketched wireframe2">
             <p>Hand sketches</p>
-            <p>&darr;</p>
-            <img src="../images/inspocloud-wireframe1.png" alt="wireframe1">
-            <img src="../images/inspocloud-wireframe2.png" alt="wireframe2">
-            <button type="button">View all digital low-fidelity mock-up</button>
+            <label class="arrowicon"><i class="fa fa-chevron-down"></i></label>
+            <img src="images/inspocloud-wireframe1.png" alt="wireframe1">
+            <img src="images/inspocloud-wireframe2.png" alt="wireframe2">
+            <a href="#">View all digital low-fidelity mock-up</a>
          </section>
          <!--USABILITY TESTING SECTION-->
-         <section>
+        <section class="usability-testing" id="highlight">
             <h3><u>Usability Testing</u></h3>
             <p>Low fidelity usability testing was an essential part of the process leading to a high fidelity mock-up to save time.<br>
                <b>Tasks for testing:</b>
@@ -167,22 +197,22 @@
          <section>
             <h3><u>Branding</u></h3>
             <p><b>What makes Inspo Cloud unique?</b></p>
-            <img src="../images/inspocloud-mindmapping.png" alt="mind mapping sketch">
+            <img src="images/inspocloud-mindmapping.png" alt="mind mapping sketch">
             <p>Mind-mapping exercise</p>
             <p>Below are the 5-6 sketches that were created after mind-mapping. The first sketches of the palette could be polished to be an abstract cloud with multiple colors. The cloud is a bit overdone in the cloud storage market, but adding the abstract “i” makes it unique and a marketable logo. The board is a simple logo but thought it represents the product’s key feature. It could be improved with brand’s logo abbreviation. Going into a more fun direction, sketching diamonds, unicorns, and feathers. They represent unique, special, creative freedom, and reliance. </p>
-            <img src="../images/inspocloud/logosketch1.png" alt="Brainstorming logo ideas">
-            <img src="../images/inspocloud/logosketch2.png" alt="Brainstorming logo ideas">
+            <img src="images/inspocloud/logosketch1.png" alt="Brainstorming logo ideas">
+            <img src="images/inspocloud/logosketch2.png" alt="Brainstorming logo ideas">
             <p><b>Branding Refinement</b></p>
-            <img src="../images/inspocloud/moodboard.png" alt="Moodboard">
-            <img src="../images/inspocloud/logo_linedrawing.png" alt="Initial logo illustrations">
-            <img src="../images/inspocloud/logo_bnw.png" alt="Black and White logo">
-            <img src="../images/inspocloud/logo_color.png" alt="Color logo">
+            <img src="images/inspocloud/moodboard.png" alt="Moodboard">
+            <img src="images/inspocloud/logo_linedrawing.png" alt="Initial logo illustrations">
+            <img src="images/inspocloud/logo_bnw.png" alt="Black and White logo">
+            <img src="images/inspocloud/logo_color.png" alt="Color logo">
             <p><b>Style Guide</b></p>
-            <img src="../images/inspocloud/styleguide.png" alt="Style Guide">
+            <img src="images/inspocloud/styleguide.png" alt="Style Guide">
          </section>
          <!--PREFERENCE TESTING SECTION-->
-         <section>
-            <h3><u>Preference Testing</u></h3>
+         <section class="preference-testing" id="highlight">
+            <h2>Preference Testing</h2>
             <p>After conducting the first usability testing, I learned that the button size and placement are part of designing a site that is intuitive for users. This preference testing was to see which visuals the users prefer with overall branding.</p>
             <img src="../images/inspocloud/preference-testing1.png" alt="Logo preference test">
             <p>Preference testing for logo options at sign up page</p>
@@ -192,8 +222,8 @@
             <p>Preference testing for dashboard colorstyle</p>
          </section>
          <!--CLICKABLE PROTOTYPE USABILITY TESTING SECTION-->
-         <section>
-            <h3><u>Clickable Prototype Usability Testing</u></h3>
+          <section>
+            <h2>Clickable Prototype Usability Testing</h2>
             <p>With a polished high fidelity prototype, another usability testing was conducted for feedback.<br>
                <b>Tasks</b>
             </p>
@@ -207,35 +237,38 @@
             </p>
          </section>
          <!--FINAL THOUGHTS SECTION-->
-         <section>
-            <h3><u>Final Thoughts</u></h3>
+          <section class="final-thoughts" id="highlight">
+            <h2>Final Thoughts</h2>
             <p>With a narrowed audience to cloud storage for designers, I’ve learned how designers use cloud storage platforms and what they would like to see in a new cloud storage. There are many satisfied users of their current platforms, but also many frustrations that could be opportunities for Inspo Cloud.
                List of new ideas for Inspo Cloud had to be prioritized with our personas in mind. To avoid dumping all the features that our competitors don’t have, the design process of user stories was so helpful directing the project forward.
             </p>
-            <p><b>What I would've done differently</b><br>
+          </section>
+
+
+
+        <section>
+            <h2>What I would've done differently</h2>
                Frustration in sharing methods and sharing access were another opportunity for this project. During the low-fidelity stage, I designed screens with a “sharing chat-box” where the user can view all the people that have access to the file along with file history of views, edits, and comments. The sharing chat-box was designed similar to iMessage screen so that users don’t have to use other forms of communication to discuss with members of the file.
                I would’ve liked to design further with this idea if given more time. But it was important for me to finish the project with the direction I found and stick with it. The overall branding and features blend well together for Inspo Cloud and the sharing tools could be added at a later stage which could attract more users to our platform.
             </p>
          </section>
       </main>
-      <footer>
-         <h3 class="footer slogan">Feel free to get in touch anytime.</h3>
-         <a href="mailto:hello@alicekim.nyc">Contact Me</a>
-         <ul>
-            <li>
-               <a href="mailto:hello@alicekim.nyc">Mail</a>
-            </li>
-            <li>
-               <a href="https://www.linkedin.com/in/alicekimnyc/">LinkedIn</a>
-            </li>
-            <li>
-               <a href="https://github.com/alicekimnyc">Github</a>
-            </li>
-            <li>
-               <a href="https://www.instagram.com/alicekim.nyc/">Instagram</a>
-            </li>
-         </ul>
-         <p>© 2020 Alice Kim</p>
-      </footer>
+
+      <!--FOOTER-->
+            <footer>
+               <h2 class="footer-text">Feel free to get in touch anytime.</h2>
+               <div class="btn-placement"><a href="mailto:hello@alicekim.nyc" class="btn-primary">Contact Me</a></div>
+               <h2 class="footer-text">Let's connect!</h2>
+               <div class="footer-container">
+                     <div class="fa fa-envelope" a href="mailto:hello@alicekim.nyc"></div>
+                     <div class="fa fa-linkedin" a href="https://www.linkedin.com/in/alicekimnyc/"></div>
+                     <div class="fa fa-github" a href="https://github.com/alicekimnyc"></div>
+                     <div class="fa fa-instagram" a href="https://www.instagram.com/alicekim.nyc/"></div>
+                </div>
+               <p>© 2020 Alice Kim</p>
+            </footer>
+
+
+
    </body>
 </html>

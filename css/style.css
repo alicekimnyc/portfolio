@@ -63,8 +63,15 @@ img {
   margin-bottom: 30px;
 }
 
+#persona-img{
+}
+
 #highlight{
   background: #F3EBE3;
+}
+
+.visible-list{
+  display: inline;
 }
 
 /*----------Typography------------*/
