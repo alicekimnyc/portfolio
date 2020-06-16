@@ -146,14 +146,17 @@ nav {
   width: 100%;
 }
 label.logo{
-  text-decoration: none;
-  color: black;
   font-family: var(--ff-primary);
   font-size: var(--fs-h2);
   font-weight: bold;
   letter-spacing: .25rem;
   line-height: 80px;
   padding: 0 100px:
+}
+
+.logo-text{
+  text-decoration: none;
+  color: black;
 }
 
 /*RESPONSIVE LOGO TO ONLY APPEAR FOR BIGGER SCREENS*/
