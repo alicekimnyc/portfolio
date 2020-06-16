@@ -2,7 +2,6 @@
 *::before,
 *::after {
   text-decoration: none;
-  list-style: none;
   box-sizing: border-box;
 }
 
@@ -44,11 +43,6 @@
 
 /*General styles */
 
-
-div {
-  background-color: #F3EBE3;
-}
-
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -59,7 +53,7 @@ body {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 2em 2em;
 }
 
 img {
@@ -68,12 +62,16 @@ img {
 }
 
 
-/*Typography */
+
+/*----------Typography------------*/
 
 h1,
-h2,
+h2
+ {
+  font-family: var(--ff-secondary);
+}
 h3 {
-  line-height: 1.1;
+  /* line-height: 1.1; */
   margin: 0;
 }
 
@@ -81,13 +79,41 @@ h1 { font-size: var(--fs-h1)}
 h2 { font-size: var(--fs-h2)}
 h3 { font-size: var(--fs-h3)}
 
-
-.roles__skill {
-  border-radius: 25px;
-  background: #DF7A39;
-  width: px;
+h4 span {
+  background-color: #F3EBE3;
+  border-radius: 20px;
+  color: #745B49;
+  padding: 2px 12px;
+  line-height: 2;
+  white-space: nowrap;
 }
 
+/*button styles*/
+
+.btn-primary{
+    background: #DF7A39;
+    border-radius: 20px;
+    color: white;
+    font-family: var(--ff-primary);
+    padding: 9px 12px;
+    margin: 10px 10px;
+    text-decoration: none;
+}
+.btn-secondary{
+    border-radius: 20px;
+    border: 2px solid #DF7A39;
+    color: #DF7A39;
+    font-family: var(--ff-primary);
+    padding: 7px 20px;
+    margin: 10px 10px;
+    text-decoration: none;
+}
+
+/*LINK STYLES*/
+a {
+  text-decoration: underline;
+  color: #DF7A39;
+}
 
 
 /*Structure */
@@ -115,6 +141,7 @@ label.logo{
 
 
 nav ul{
+  list-style: none;
   float: left;
   margin-right: 20px;
 }
@@ -127,6 +154,7 @@ nav ul li a{
   color: black;
   padding: 7px 13px;
   border-radius: 3px;
+  text-decoration: none;
 }
 .checkbtn{
   font-size: 30px;
@@ -175,32 +203,15 @@ nav ul li a{
 
 .intro {
   background: #F3EBE3;
-  font-family: var(--ff-secondary);
 }
 .intro__title{
-      line-height: 1.5;
       margin-bottom: 20px;
 }
 .intro__subtitle{
   font-weight: normal;
-    line-height: 1.5;
     margin-bottom: 20px;
 }
-.btn-primary{
-    background: #DF7A39;
-    border-radius: 20px;
-    color: white;
-    font-family: var(--ff-primary);
-    padding: 9px 12px;
-    margin-right: 20px;
-}
-.btn-secondary{
-    border-radius: 20px;
-    border: 2px solid #DF7A39;
-    color: #DF7A39;
-    font-family: var(--ff-primary);
-    padding: 7px 20px;
-}
+
 .intro__img{
   margin: 20px;
 }
@@ -209,4 +220,10 @@ nav ul li a{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/*-------LATEST WORK-------*/
+#highlight{
+  background: #F3EBE3;
 }
