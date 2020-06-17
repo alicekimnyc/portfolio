@@ -29,6 +29,8 @@
 
 }
 
+/*------------------MEDIA QUERY--------------------*/
+
 @media (min-width: 800px) {
   :root {
     --fs-h1: 3rem;
@@ -37,6 +39,24 @@
     --fs-body: 1rem;
   }
 }
+
+/*RESPONSIVE LOGO*/
+@media (max-width: 800px) {
+  .logo__image {
+  display: none;
+  }
+}
+
+/* code added to create two-column design */
+@media screen and (max-width: 415px){
+   .skill {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+
+
 
 
 
@@ -160,11 +180,11 @@ label.logo{
 }
 
 /*RESPONSIVE LOGO TO ONLY APPEAR FOR BIGGER SCREENS*/
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .logo__image {
   display: none;
   }
-}
+} */
 
 
 nav ul{
@@ -244,30 +264,23 @@ nav ul li a{
 }
 
 
-/*-------SKILLS-------*/
+/*-------------SKILLS--------------*/
 
 .skill-img{
-  display: inline;
+    display: inline;
   max-width: 100%;
-  margin: 10px;
+  margin: 0;
 }
 
 .skill {
-float: left;
-margin: 1% 0;
-width: 100%;
+  display: inline-block;
+  margin: 1% 0;
+/* width: 48%; */
 padding: 10px 5px;
 text-align: center;
 }
 
 
-/* code added to create two-column design */
-@media screen and (max-width: 415px){
-   .skill {
-    margin: 1%;
-    width: 48%;
-  }
-}
 
 /*------------CONTRAST MESSAGE BAR-----------------*/
 
