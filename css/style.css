@@ -33,16 +33,38 @@
 
 @media (min-width: 800px) {
   :root {
-    --fs-h1: 3rem;
-    --fs-h2: 2rem;
+    --fs-h1: 2.75rem;
+    --fs-h2: 2.25rem;
     --fs-h3: 2rem;
-    --fs-body: 1rem;
+    --fs-body: 1.75rem;
+  }
+nav{
+  height: 120px;
+}
+.AKlogo{
+  display: block;
+  max-height: 60px;
+  position: absolute;
+  left: 75px;
+  top: 30px;
+}
+.logo-text{
+  position: absolute;
+  left: 180px;
+  top: 20px;
+  }
+.intro_text{
+    width: 50%;
+  }
+.intro__img{
+    /* width: 50%; */
+    /* float: right; */
   }
 }
 
 /*RESPONSIVE LOGO*/
 @media (max-width: 800px) {
-  .logo__image {
+  .AKlogo {
   display: none;
   }
 }
@@ -80,6 +102,7 @@ section {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -162,7 +185,7 @@ a {
 
 nav {
   background: #F3EBE3;
-  height: 80px;
+  /* height: 80px; */
   width: 100%;
 }
 label.logo{
@@ -179,29 +202,21 @@ label.logo{
   color: black;
 }
 
-/*RESPONSIVE LOGO TO ONLY APPEAR FOR BIGGER SCREENS*/
-/* @media (max-width: 800px) {
-  .logo__image {
-  display: none;
-  }
-} */
-
 
 nav ul{
   list-style: none;
-  float: left;
-  margin-right: 20px;
+  float: right;
+  margin-right: 75px;
 }
 nav ul li{
   display: inline-block;
   line-height: 80px;
-  margin: 0 5px;
 }
 nav ul li a{
   color: black;
-  padding: 7px 13px;
   border-radius: 3px;
   text-decoration: none;
+  margin: 0px 7px; /*keeps list apart*/
 }
 .checkbtn{
   font-size: 30px;
@@ -213,6 +228,7 @@ nav ul li a{
 #check{
   display: none;
 }
+/*----------MEDIA QUERY FOR NAV MENU-----*/
 @media (max-width: 800px){
   label.logo{
     font-size: 30px;
@@ -230,7 +246,7 @@ nav ul li a{
     background: white;
     top: 80px;
     left: -100%;
-    text-align: left;
+    text-align: center;
     transition: all .5s;
   }
   nav ul li{
