@@ -29,6 +29,7 @@
 
 }
 
+
 /*------------------MEDIA QUERY--------------------*/
 
 @media (min-width: 800px) {
@@ -36,8 +37,11 @@
     --fs-h1: 2.75rem;
     --fs-h2: 2.25rem;
     --fs-h3: 2rem;
-    --fs-body: 1.75rem;
+    --fs-body: 1.5rem;
   }
+
+
+/*nav & introduction*/
 nav{
   height: 120px;
 }
@@ -53,13 +57,46 @@ nav{
   left: 180px;
   top: 20px;
   }
-.intro_text{
+.intro_right{
+    display: inline-block;
     width: 50%;
   }
 .intro__img{
-    /* width: 50%; */
-    /* float: right; */
+   float: right;
+    width: 50%;
   }
+.arrowicon{
+  display: inline;
+  width: 100%
+}
+
+/*sections*/
+.inspocloud{
+    display: inline-block;
+    width: 100%;
+}
+.inspocloud_introduction{
+    display: inline-block;
+    width: 48%;
+  }
+.inspocloud_img{
+  float: right;
+   width: 48%;
+}
+
+.busybus{
+  display: inline-block;
+}
+
+.busybus_introduction{
+    display: inline-block;
+    width: 48%;
+  }
+.busybus_img{
+   float: left;
+   width: 48%;
+   margin-right: 5%;
+}
 
 }
 
@@ -74,11 +111,21 @@ nav{
 }
 
 /* code added to create two-column design */
-@media screen and (max-width: 415px){
-   .skill {
-    margin: 1%;
-    width: 48%;
-  }
+@media (min-width: 700px) {
+.my_skills{
+  width: 100%;
+}
+.skill{
+  width: 10%;
+}
+/*----------MY PHOTO-----------*/
+.my_photo{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 65%;
+}
+
 }
 
 
@@ -99,7 +146,7 @@ body {
 }
 
 section {
-  padding: 2em 2em;
+  padding: 5% 10%;
   margin-bottom: 30px;
 }
 
@@ -115,6 +162,7 @@ img {
 
 #highlight{
   background: #F3EBE3;
+  margin: 0;
 }
 
 .visible-list{
@@ -152,7 +200,7 @@ h4 span {
 
 .btn-primary{
     display: inline-block;
-    max-width: 300px;
+    max-width: 50%;
     margin: 10px;
     background: #DF7A39;
     border-radius: 20px;
@@ -161,10 +209,11 @@ h4 span {
     padding: 9px 12px;
     text-decoration: none;
     white-space: nowrap;
+    overflow:hidden;
 }
 .btn-secondary{
     display: inline-block;
-    max-width: 300px;
+    max-width: 50%;
     margin: 10px;
     border-radius: 20px;
     border: 2px solid #DF7A39;
@@ -173,6 +222,7 @@ h4 span {
     padding: 7px 20px;
     text-decoration: none;
       white-space: nowrap;
+      overflow:hidden;
 }
 .btn-placement{
   text-align: center;
@@ -233,7 +283,7 @@ nav ul li a{
   display: none;
 }
 /*----------MEDIA QUERY FOR NAV MENU-----*/
-@media (max-width: 800px){
+@media (max-width: 1400px){
   label.logo{
     font-size: 30px;
     padding-left: 30px;
@@ -291,13 +341,11 @@ nav ul li a{
   max-width: 100%;
   margin: 0;
 }
-
 .skill {
   display: inline-block;
-  margin: 1% 0;
-/* width: 48%; */
-padding: 10px 5px;
-text-align: center;
+  margin: 5%;
+  max-width: 40%;
+  text-align: center;
 }
 
 
@@ -339,7 +387,7 @@ footer {
 .footer-text{
   font-weight: normal;
   /* width: 70%; */
-  margin: 0 20%;
+  margin: 5% 20%;
   text-align: center;
 }
 
