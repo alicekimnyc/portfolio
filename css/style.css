@@ -60,7 +60,11 @@ nav{
     /* width: 50%; */
     /* float: right; */
   }
+
 }
+
+
+
 
 /*RESPONSIVE LOGO*/
 @media (max-width: 800px) {
@@ -312,6 +316,10 @@ text-align: center;
 
 /*-------------TESTIMONIAL PICTURE------------*/
 .testimonial_mike{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 25%;
 }
 
 
