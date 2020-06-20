@@ -30,6 +30,11 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /*------------------MEDIA QUERY--------------------*/
 
 @media (min-width: 800px) {
