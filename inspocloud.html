@@ -22,18 +22,19 @@
    <body>
 
      <nav>
-       <div class="logo__image">
-       <img src="images/AKlogo.png" alt=""></div>
+
+       <img src="images/AKlogo.png" alt="" class="AKlogo">
+       <label class="logo">
+          <a href="index.html" class="logo-text">ALICE KIM</a>
+       </label>
 
        <input type="checkbox" id="check">
        <label for="check" class="checkbtn">
          <i class="fa fa-bars"></i>
        </label>
-         <label class="logo">
-          <a href="index.html" class="logo-text">ALICE KIM</a>
-         </label>
+
           <ul>
-            <li><a class="active"><a href="#work">WORK</a></li>
+            <li><a class="#"><a href="#work">WORK</a></li>
             <li><a class="#"><a href="#">RESUME</a></li>
             <li><a class="#"><a href="#">ABOUT</a></li>
             <li><a class="contactme"><a href="#">CONTACT ME</a></li>
@@ -41,17 +42,19 @@
       </nav>
 
 
-      <section>
-         <h1>Inspo Cloud</h1>
-         <h3>A cloud storage web App for Designers.</h3>
-            <h4><span>Research</span>
-             <span>User Testing</span>
-             <span>UX</span>
-             <span>UI Design</span>
-             <span>Prototyping</span></h4>
 
-          <img src="images/inspocloud/dashboard_iphone-mockup.png" alt="Inspo cloud mobile dashboard" class="project__img">
-          <div class="btn-placement"><a href="https://invis.io/5UW143FTS76#/405320912_Sign_Up_Start_Final_Screen" class="btn-secondary">View Prototype</a></div>
+        <section class="inspocloud">
+           <img src="images/inspocloud/dashboard_iphone-mockup.png" alt="Inspo cloud mobile dashboard" class="inspocloud_img">
+           <div class="inspocloud_left">
+           <h2>Inspo Cloud</h2>
+           <h3>A cloud storage web App for Designers.</h3>
+              <h4><span>Research</span>
+               <span>User Testing</span>
+               <span>UX</span>
+               <span>UI Design</span>
+               <span>Prototyping</span></h4>
+               <div class="btn-placement"><a href="https://invis.io/5UW143FTS76#/405320912_Sign_Up_Start_Final_Screen" class="btn-secondary">View Prototype</a></div>
+         </div>
 
       </section>
       <main>
@@ -77,15 +80,21 @@
             <p>Many designers are intuitive to digital artboards and physical boards. By expanding on that intuition, users can organize files, notes, and folders on multiple boards.</p>
             <img src="../images/inspocloud-board.png" alt="Dashboard for designers to organize files and make notes.">
          </section>
+
+
+
+
+
          <!--PROCESS SECTION-->
          <section>
             <h2>Process</h2>
             <h3>Research</h3>
             <p>Online survey on cloud storage usage provided insights from designers.<br>
-               More than 70% of the participants are working full-time and use cloud storage for their work.<br>
-               <b>Takeaways from Survey Analysis</b><br>
-            </p>
-            <div class"visible-list"><ul>
+               More than 70% of the participants are working full-time and use cloud storage for their work.</p>
+
+               <p>Takeaways from Survey Analysis</p>
+
+            <div class="visible-list"><ul>
                <li>100% of the participants use cloud storage</li>
                <li>Designers are uploading design files into the cloud</li>
                <li>Should be able to preview files no matter what the file type is</li>
@@ -95,7 +104,6 @@
                <li>Better layouts to view files</li>
             </ul></div>
             <a href="inspocloud-survey">View full survey question</a>
-          </section>
 
 
             <!--COMPETITIVE ANALYSIS-->
@@ -107,12 +115,17 @@
             <a href="#">Read in-depth competitive Analysis</a>
 
 
+
             <!--USER PERSONA-->
             <h3>User Personas</h3>
                Personas were created with the most important goals and frustrations for our target audience with user research and competitive analysis.
             </p>
+          </section>
+
+
+
             <section class="katie" id="highlight">
-               <img src="../images/inspocloud-PersonaKatie.png" alt="Persona Image of Katie" id="persona-img">
+               <img src="../images/inspocloud-PersonaKatie.png" alt="Persona Image of Katie" class="photo">
                <p><b>Katie</b><br>28 yo, Graphic Designer, Los Angeles</p>
                <p>“I’m working with several different clients on similar projects so it’s important to stay organized and not mix up my flies.”</p>
                <p>Katie’s schedule is packed with several design projects with different clients. She uses cloud storage to share and send her work to the client. It’s super important to keep files organized and that her clients receive the fils and have access to them.</p>
@@ -132,7 +145,7 @@
 
 
             <section class="ray" id="highlight">
-               <img src="../images/inspocloud-PersonaRay.png" alt="Persona Image of Ray" id="persona-img">
+               <img src="../images/inspocloud-PersonaRay.png" alt="Persona Image of Ray" class="photo">
                <p><b>Ray</b><br>32 yo, Interior Designer, New York City</p>
                <p>“Clicking through piles of design inspirational pictures takes too long, I need to view all the files and create a board quickly.”</p>
                <p>Ray is constantly looking out for new trends online and in-person. He collects photos of all the design details, prints, tags, and anything else that he wants to show his team. He uploads them to the cloud storage to share with his team, but there are too many photos to sort through.</p>
@@ -229,7 +242,7 @@
             <p>With a polished high fidelity prototype, another usability testing was conducted for feedback.<br>
                <b>Tasks</b>
             </p>
-            <ul>
+            <ul class="visible_list">
                <li>Log into the account</li>
                <li>Create a new folder</li>
                <li>Upload a file</li>
@@ -237,18 +250,16 @@
             <p><b>Revision Required</b><br>
                The font was increased in size and also darkened to stand out. It was a very small minor change, but a change that applies to the entire site.
             </p>
-         </section>
+          </section>
+
          <!--FINAL THOUGHTS SECTION-->
           <section class="final-thoughts" id="highlight">
             <h2>Final Thoughts</h2>
             <p>With a narrowed audience to cloud storage for designers, I’ve learned how designers use cloud storage platforms and what they would like to see in a new cloud storage. There are many satisfied users of their current platforms, but also many frustrations that could be opportunities for Inspo Cloud.
                List of new ideas for Inspo Cloud had to be prioritized with our personas in mind. To avoid dumping all the features that our competitors don’t have, the design process of user stories was so helpful directing the project forward.
             </p>
-          </section>
 
 
-
-        <section>
             <h2>What I would've done differently</h2>
                Frustration in sharing methods and sharing access were another opportunity for this project. During the low-fidelity stage, I designed screens with a “sharing chat-box” where the user can view all the people that have access to the file along with file history of views, edits, and comments. The sharing chat-box was designed similar to iMessage screen so that users don’t have to use other forms of communication to discuss with members of the file.
                I would’ve liked to design further with this idea if given more time. But it was important for me to finish the project with the direction I found and stick with it. The overall branding and features blend well together for Inspo Cloud and the sharing tools could be added at a later stage which could attract more users to our platform.
