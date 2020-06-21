@@ -104,6 +104,18 @@ nav{
    margin-right: 5%;
 }
 
+/*----ABOUT ME SECTION----*/
+.aboutme_photo{
+  float: right;
+  margin: auto;
+    width: 35%;
+}
+.aboutme_intro{
+  display: inline-block;
+  width: 60%;
+  margin-right: 5%;
+}
+
 }
 
 
@@ -373,6 +385,14 @@ nav ul li a{
 margin-left: auto;
 margin-right: auto;
 width: 25%;
+}
+
+
+/*-------------ABOUT ME PICTURE------------*/
+.aboutme_photo{
+  display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 
