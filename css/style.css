@@ -136,13 +136,7 @@ nav{
 .skill{
   width: 10%;
 }
-/*----------MY PHOTO-----------*/
-.photo{
-  display: block;
-margin-left: auto;
-margin-right: auto;
-width: 65%;
-}
+
 
 }
 
@@ -388,11 +382,14 @@ width: 25%;
 }
 
 
-/*-------------ABOUT ME PICTURE------------*/
+/*-------------ABOUT ME------------*/
 .aboutme_photo{
   display: block;
 margin-left: auto;
 margin-right: auto;
+}
+.aboutme_subintro{
+    font-weight: normal;
 }
 
 
