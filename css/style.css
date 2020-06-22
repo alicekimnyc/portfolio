@@ -250,7 +250,7 @@ a {
 
 nav {
   background: #F3EBE3;
-  /* height: 80px; */
+  height: 80px;
   width: 100%;
   position: fixed;
 }
