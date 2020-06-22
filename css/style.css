@@ -268,16 +268,16 @@ label.logo{
 }
 
 
-nav ul{
+ul{
   list-style: none;
   float: right;
   margin-right: 75px;
 }
-nav ul li{
+ul li{
   display: inline-block;
   line-height: 80px;
 }
-nav ul li a{
+ul li a{
   color: black;
   border-radius: 3px;
   text-decoration: none;
@@ -299,7 +299,7 @@ nav ul li a{
     font-size: 30px;
     padding-left: 30px;
   }
-  nav ul li a{
+ul li a{
     font-size: 16px;
   }
   .checkbtn{
@@ -314,12 +314,12 @@ ul.hamburger{
     text-align: center;
     transition: all .5s;
   }
-  nav ul li{
+  ul li{
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-    nav ul li a{
+    ul li a{
       font-size: 20px;
     }
     #check:checked ~ ul{
