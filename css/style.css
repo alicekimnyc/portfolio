@@ -310,7 +310,7 @@ ul.hamburger{
     width: 100%;
     background: white;
     top: 80px;
-    top: -100%;
+    left: -100%;
     text-align: center;
     transition: all .5s;
   }
@@ -323,7 +323,7 @@ ul.hamburger{
       font-size: 20px;
     }
     #check:checked ~ ul{
-      top: 0;
+      left: 0;
     }
 }
 
