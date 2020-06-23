@@ -103,8 +103,13 @@ nav{
    width: 30%;
    margin-right: 5%;
 }
+/*-------SHORT BIO SECTION-------*/
+.myphoto{
+  max-width: 40%;
+  margin: auto;
+}
 
-/*----ABOUT ME SECTION----*/
+/*---------ABOUT ME PAGE----*/
 .aboutme_photo{
   float: right;
   margin: auto;
@@ -386,7 +391,7 @@ width: 25%;
 }
 
 
-/*-------------ABOUT ME------------*/
+/*-------------ABOUT ME PAGE------------*/
 .aboutme_photo{
   display: block;
 margin-left: auto;
