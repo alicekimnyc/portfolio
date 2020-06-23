@@ -272,6 +272,7 @@ label.logo{
 ul{
   list-style: none;
   float: right;
+  padding-right: 30px;
 }
 ul li{
   display: inline-block;
