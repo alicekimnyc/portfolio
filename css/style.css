@@ -157,6 +157,7 @@ body {
   line-height: 1.5;
 }
 
+
 section {
   padding: 5% 10%;
   margin-bottom: 30px;
@@ -252,7 +253,6 @@ nav {
   background: #F3EBE3;
   height: 80px;
   width: 100%;
-  position: fixed;
 }
 label.logo{
   font-family: var(--ff-primary);
@@ -319,7 +319,6 @@ ul.hamburger{
   }
   ul li{
     display: block;
-    z-index: 1;
     margin: 50px 0;
     line-height: 30px;
   }
