@@ -47,9 +47,11 @@ html {
 
 
 /*nav & introduction*/
+
 nav{
-  height: 120px;
+  height: 180px;
 }
+
 .AKlogo{
   display: block;
   max-height: 60px;
@@ -421,7 +423,7 @@ footer {
   margin: 5% 20%;
   text-align: center;
 }
-
+/* .footer-container css property does not apply, need to fix icon links*/
 .footer-container > div {
   margin: 15px 0px;
   background: #DF7A39;
