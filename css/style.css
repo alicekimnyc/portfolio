@@ -163,6 +163,23 @@ body {
   font-size: var(--fs-body);
   line-height: 1.5;
 }
+#btnScrollToTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #DF7A39;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#btnScrollToTop:active {
+  background: #C36325;
+}
 
 
 section {
@@ -217,7 +234,7 @@ h4 span {
 
 /*--------button styles---------*/
 
-.btn-primary{
+a.btn-primary{
     display: inline-block;
     max-width: 50%;
     margin: 10px;
@@ -226,11 +243,14 @@ h4 span {
     color: white;
     font-family: var(--ff-primary);
     padding: 9px 12px;
-    text-decoration: none;
     white-space: nowrap;
     overflow:hidden;
+    opacity: 1;
+transition: 0.3s;
 }
-.btn-secondary{
+a.btn-primary:hover {opacity: 0.6}
+
+a.btn-secondary{
     display: inline-block;
     max-width: 50%;
     margin: 10px;
@@ -240,18 +260,13 @@ h4 span {
     font-family: var(--ff-primary);
     padding: 7px 20px;
     text-decoration: none;
-      white-space: nowrap;
-      overflow:hidden;
+    white-space: nowrap;
+    overflow:hidden;
 }
 .btn-placement{
   text-align: center;
 }
 
-/*LINK STYLES*/
-a {
-  text-decoration: underline;
-  color: #DF7A39;
-}
 
 
 /*--------NAV STRUCTURE------ */
