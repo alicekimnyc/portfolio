@@ -163,24 +163,6 @@ body {
   font-size: var(--fs-body);
   line-height: 1.5;
 }
-#btnScrollToTop {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #DF7A39;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  color: #ffffff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: none;
-}
-#btnScrollToTop:active {
-  background: #C36325;
-}
 
 
 section {
@@ -249,7 +231,7 @@ a.btn-primary{
     opacity: 1;
 transition: 0.3s;
 }
-a.btn-primary:hover {opacity: 0.6}
+a.btn-primary:hover {background: #C36325;}
 
 a.btn-secondary{
     display: inline-block;
@@ -267,6 +249,27 @@ a.btn-secondary{
 .btn-placement{
   text-align: center;
 }
+
+#btnScrollToTop {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #DF7A39;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+#btnScrollToTop:active {
+  background: #C36325;
+}
+
+
 
 
 
