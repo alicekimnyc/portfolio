@@ -45,7 +45,6 @@ html {
     --fs-body: 1.5rem;
   }
 
-
 /*nav & introduction*/
 
 nav{
@@ -220,13 +219,12 @@ h4 span {
 a.btn-primary{
     display: inline-block;
     max-width: 50%;
-    margin: 10px;
     background: #DF7A39;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 2px solid #DF7A39;
     color: white;
     font-family: var(--ff-primary);
-    padding: 9px 12px;
+    padding: 7px 20px;
     white-space: nowrap;
     overflow:hidden;
     opacity: 1;
@@ -238,13 +236,13 @@ a.btn-primary:active {background: #C36325;}
 a.btn-secondary{
     display: inline-block;
     max-width: 50%;
-    margin: 10px;
+    margin-left: 10px;
     background: #F3EBE3;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 2px solid #DF7A39;
     color: #DF7A39;
     font-family: var(--ff-primary);
-    padding: 9px 12px;
+    padding: 7px 20px;
     white-space: nowrap;
     overflow:hidden;
     opacity: 1;
@@ -257,20 +255,37 @@ a.btn-primary:active {
 }
 
 
+a.btn-center{
+  display: inline-block;
+  background: #DF7A39;
+  border-radius: 30px;
+  border: 2px solid #DF7A39;
+  color: white;
+  font-family: var(--ff-primary);
+  padding: 7px 20px;
+  white-space: nowrap;
+  overflow:hidden;
+  opacity: 1;
+  transition: 0.3s;
+}
+a.btn-center:hover {opacity: 0.6}
+a.btn-center:active {background: #C36325;}
+
 .btn-placement{
   text-align: center;
 }
 
 #btnScrollToTop {
   position: fixed;
-  right: 40px;
-  bottom: 40px;
+  right: 20px;
+  bottom: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: #DF7A39;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   color: #ffffff;
+  font-size: var(--fs-h3);
   border: none;
   outline: none;
   cursor: pointer;
@@ -280,7 +295,9 @@ a.btn-primary:active {
   background: #C36325;
 }
 
-
+a {
+  color: #DF7A39;
+}
 
 
 
@@ -452,15 +469,3 @@ footer {
   /* width: 70%; */
   margin: 5% 20%;
   text-align: center;
-}
-/* .footer-container css property does not apply, need to fix icon links*/
-.footer-container > div {
-  margin: 15px 0px;
-  background: #DF7A39;
-  color: white;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  text-align: center;
-}
