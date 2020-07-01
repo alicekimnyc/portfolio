@@ -37,7 +37,7 @@ html {
 
 /*------------------MEDIA QUERY--------------------*/
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   :root {
     --fs-h1: 2.75rem;
     --fs-h2: 2.25rem;
@@ -47,15 +47,11 @@ html {
 
 /*nav & introduction*/
 
-nav{
-  height: 180px;
-}
-
 .AKlogo{
   display: block;
-  max-height: 60px;
+  max-height: 50px;
   position: absolute;
-  left: 75px;
+  left: 100px;
   top: 30px;
 }
 .logo-text{
@@ -128,20 +124,61 @@ nav{
 
 
 /*RESPONSIVE LOGO*/
-@media (max-width: 800px) {
+/* @media (max-width: 1000px) {
   .AKlogo {
-  display: none;
+    display: block;
+    max-height: 50px;
+    position: absolute;
+    left: 100px;
+    top: 12px;
   }
+
+  .logo-text{
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    }
+} */
+
+@media (max-width: 900px){
+  .AKlogo {
+    display: block;
+    max-height: 50px;
+    position: absolute;
+    left: 100px;
+    top: 12px;
+  }
+  .logo-text{
+    position: absolute;
+    left: 180px;
+    top: 0px;
+    }
+}
+
+@media (max-width: 400px){
+  .AKlogo{
+    display:none;
+  }
+  .logo-text{
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    }
 }
 
 /* code added to create two-column design */
 @media (min-width: 700px) {
+
+
 .my_skills{
   width: 100%;
 }
 .skill{
   width: 10%;
+
 }
+
+
 
 
 }
@@ -167,6 +204,7 @@ body {
 section {
   padding: 5% 10%;
   margin-bottom: 30px;
+
 }
 
 img {
@@ -219,6 +257,7 @@ h4 span {
 a.btn-primary{
     display: inline-block;
     max-width: 50%;
+    margin-right: 10px;
     background: #DF7A39;
     border-radius: 30px;
     border: 2px solid #DF7A39;
@@ -230,14 +269,15 @@ a.btn-primary{
     opacity: 1;
     transition: 0.3s;
 }
+
+
+
 a.btn-primary:hover {opacity: 0.6}
 a.btn-primary:active {background: #C36325;}
 
 a.btn-secondary{
     display: inline-block;
     max-width: 50%;
-    margin-left: 10px;
-    background: #F3EBE3;
     border-radius: 30px;
     border: 2px solid #DF7A39;
     color: #DF7A39;
@@ -248,8 +288,8 @@ a.btn-secondary{
     opacity: 1;
     transition: 0.3s;
 }
-a.btn-primary:hover {opacity: 0.6}
-a.btn-primary:active {
+a.btn-secondary:hover {opacity: 0.6}
+a.btn-secondary:active {
   color: #C36325;
   border: #C36325;
 }
@@ -358,6 +398,7 @@ ul li a{
 ul li a{
     font-size: 16px;
   }
+
   .checkbtn{
     display: block;
   }
