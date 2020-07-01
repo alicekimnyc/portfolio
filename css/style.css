@@ -47,17 +47,17 @@ html {
 
 /*nav & introduction*/
 
-.AKlogo{
+.AKlogo {
   display: block;
   max-height: 50px;
   position: absolute;
   left: 100px;
-  top: 30px;
+  top: 12px;
 }
 .logo-text{
   position: absolute;
   left: 180px;
-  top: 20px;
+  top: 0px;
   }
 .intro_right{
     display: inline-block;
@@ -155,7 +155,7 @@ html {
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 600px){
   .AKlogo{
     display:none;
   }
@@ -366,11 +366,11 @@ label.logo{
 ul{
   list-style: none;
   float: right;
-  padding-right: 30px;
+  padding-right: 100px;
 }
 ul li{
   display: inline-block;
-  line-height: 80px;
+  line-height: 20px;
 }
 ul li a{
   color: black;
@@ -389,7 +389,7 @@ ul li a{
   display: none;
 }
 /*----------MEDIA QUERY FOR NAV MENU-----*/
-@media (max-width: 1400px){
+@media (max-width: 1023px){
   label.logo{
     font-size: 30px;
     padding-left: 50px;
