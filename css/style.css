@@ -378,7 +378,14 @@ ul li a{
   text-decoration: none;
   margin: 0px 7px; /*keeps list apart*/
 }
-.checkbtn{
+.open {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+}
+.close {
   font-size: 30px;
   float: right;
   line-height: 80px;
@@ -399,7 +406,10 @@ ul li a{
     font-size: 16px;
   }
 
-  .checkbtn{
+  .open{
+    display: block;
+  }
+  .close{
     display: block;
   }
 ul.hamburger{
