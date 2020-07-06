@@ -37,7 +37,7 @@ html {
 
 /*------------------MEDIA QUERY--------------------*/
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   :root {
     --fs-h1: 2.75rem;
     --fs-h2: 2.25rem;
@@ -45,8 +45,10 @@ html {
     --fs-body: 1.5rem;
   }
   section {
-    padding: 5% 20%;
+    padding: 5% 25%;
+    margin-bottom: 30px;
   }
+
 
 /*nav & introduction*/
 
@@ -145,6 +147,11 @@ html {
 } */
 
 @media (max-width: 900px){
+  section {
+    padding: 5% 10%;
+    margin-bottom: 30px;
+
+  }
 
   .AKlogo {
     display: block;
@@ -196,13 +203,6 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.5;
-}
-
-
-section {
-  padding: 5% 10%;
-  margin-bottom: 30px;
-
 }
 
 img {
