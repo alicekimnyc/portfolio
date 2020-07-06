@@ -44,20 +44,23 @@ html {
     --fs-h3: 2rem;
     --fs-body: 1.5rem;
   }
+  section {
+    padding: 5% 20%;
+  }
 
 /*nav & introduction*/
 
 .AKlogo {
   display: block;
-  max-height: 50px;
+  max-height: 40px;
   position: absolute;
   left: 100px;
-  top: 12px;
+  top: 25px;
 }
 .logo-text{
   position: absolute;
   left: 180px;
-  top: 0px;
+  top: 5px;
   }
 .intro_right{
     display: inline-block;
@@ -73,6 +76,7 @@ html {
 }
 
 /*sections*/
+
 .inspocloud{
     display: inline-block;
     width: 100%;
@@ -141,17 +145,18 @@ html {
 } */
 
 @media (max-width: 900px){
+
   .AKlogo {
     display: block;
-    max-height: 50px;
+    max-height: 40px;
     position: absolute;
     left: 100px;
-    top: 12px;
+    top: 25px;
   }
   .logo-text{
     position: absolute;
     left: 180px;
-    top: 0px;
+    top: 5px;
     }
 }
 
@@ -168,19 +173,12 @@ html {
 
 /* code added to create two-column design */
 @media (min-width: 700px) {
-
-
 .my_skills{
   width: 100%;
-}
+ }
 .skill{
   width: 10%;
-
-}
-
-
-
-
+ }
 }
 
 
@@ -214,14 +212,14 @@ img {
   margin-bottom: 30px;
 }
 
-#persona-img{
-}
-
 #highlight{
   background: #F3EBE3;
   margin: 0;
 }
 
+ul.visible-list {
+  margin: 40 0px;
+}
 
 
 
@@ -256,7 +254,7 @@ h4 span {
 
 a.btn-primary{
     display: inline-block;
-    max-width: 50%;
+    /* max-width: 50%; */
     margin-right: 10px;
     background: #DF7A39;
     border-radius: 30px;
@@ -277,7 +275,7 @@ a.btn-primary:active {background: #C36325;}
 
 a.btn-secondary{
     display: inline-block;
-    max-width: 50%;
+    /* max-width: 50%; */
     border-radius: 30px;
     border: 2px solid #DF7A39;
     color: #DF7A39;
@@ -363,20 +361,20 @@ label.logo{
 }
 
 
-ul{
+ul.hamburger{
   list-style: none;
   float: right;
   padding-right: 100px;
 }
-ul li{
+ul.hamburger li{
   display: inline-block;
   line-height: 20px;
 }
-ul li a{
+ul.hamburger li a{
   color: black;
   border-radius: 3px;
   text-decoration: none;
-  margin: 0px 7px; /*keeps list apart*/
+  margin: 0px 20px; /*keeps list apart*/
 }
 .checkbtn{
   font-size: 30px;
@@ -395,10 +393,6 @@ ul li a{
     padding-left: 50px;
   }
 
-ul li a{
-    font-size: 16px;
-  }
-
   .checkbtn{
     display: block;
   }
@@ -413,18 +407,19 @@ ul.hamburger{
     padding: 0;
     margin: 0;
   }
-  ul li{
+  ul.hamburger li{
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-    ul li a{
+    ul.hamburger li a{
       font-size: 20px;
     }
-    #check:checked ~ ul{
+    #check:checked ~ ul.hamburger{
       right: 0;
     }
 }
+
 
 /*----------INTRODUCTION-----------*/
 
