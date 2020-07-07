@@ -39,9 +39,9 @@ html {
 
 @media (min-width: 700px) {
   :root {
-    --fs-h1: 2.75rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 2rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.75rem;
     --fs-body: 1.5rem;
   }
   section {
@@ -64,6 +64,11 @@ html {
   left: 180px;
   top: 5px;
   }
+
+.intro
+{
+  padding: 3% 10%;
+}
 .intro_right{
     display: inline-block;
     width: 50%;
@@ -179,13 +184,18 @@ html {
 }
 
 /* code added to create two-column design */
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
 .my_skills{
-  width: 100%;
+  padding: 0;
+  margin: auto;
+  /* width: 80%; */
  }
-.skill{
-  width: 10%;
+ .skill {
+   display: inline;
+   max-width: 15%;
+   text-align: center;
  }
+
 }
 
 
@@ -449,7 +459,7 @@ ul.hamburger{
 .skill {
   display: inline-block;
   margin: 5%;
-  max-width: 40%;
+  max-width: 45%;
   text-align: center;
 }
 
