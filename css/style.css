@@ -20,6 +20,7 @@
   --fs-h1: 2rem;
   --fs-h2: 1.50rem;
   --fs-h3: 1.25rem;
+  --fs-h4: 1rem;
   --fs-body: 1rem;
 
 
@@ -39,10 +40,11 @@ html {
 
 @media (min-width: 700px) {
   :root {
-    --fs-h1: 2.5rem;
-    --fs-h2: 2rem;
-    --fs-h3: 1.75rem;
-    --fs-body: 1.5rem;
+    --fs-h1: 2rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
+    --fs-body: 1.25rem;
   }
   section {
     padding: 5% 25%;
@@ -73,13 +75,15 @@ html {
     display: inline-block;
     width: 50%;
   }
-.intro__img{
+.intro_img{
    float: right;
     width: 50%;
+   margin-top: 40px;
   }
 .arrowicon{
   display: inline;
-  width: 100%
+  width: 100%;
+  margin: 20px;
 }
 
 /*sections*/
@@ -95,7 +99,13 @@ html {
 .inspocloud_img{
   float: right;
    width: 30%;
-   margin-left: 5%;
+   margin-left: 10%;
+}
+.aboutme_photo{
+  display: inline-block;
+      float: right;
+      padding: 2%;
+      max-height: 100%;
 }
 
 .busybus{
@@ -109,7 +119,7 @@ html {
 .busybus_img{
    float: left;
    width: 30%;
-   margin-right: 5%;
+   margin-right: 10%;
 }
 /*-------SHORT BIO SECTION-------*/
 .myphoto{
@@ -117,39 +127,25 @@ html {
   margin: auto;
 }
 
-/*---------ABOUT ME PAGE----*/
-.aboutme_photo{
-  float: right;
+
+/*------------SKILLS SECTION----*/
+.my_skills{
+  width: 90%;
   margin: auto;
-    width: 35%;
+  margin-top: 5%;
+  padding: 0;
 }
-.aboutme_intro{
+
+ul.skill-content {
+  width: 20%;
+  margin: 5% 2% 10% 2%;
   display: inline-block;
-  width: 60%;
-  margin-right: 5%;
 }
 
 }
 
 
 
-
-/*RESPONSIVE LOGO*/
-/* @media (max-width: 1000px) {
-  .AKlogo {
-    display: block;
-    max-height: 50px;
-    position: absolute;
-    left: 100px;
-    top: 12px;
-  }
-
-  .logo-text{
-    position: absolute;
-    left: 100px;
-    top: 0px;
-    }
-} */
 
 @media (max-width: 900px){
   section {
@@ -185,16 +181,13 @@ html {
 
 /* code added to create two-column design */
 @media (min-width: 1000px) {
-.my_skills{
-  padding: 0;
-  margin: auto;
-  /* width: 80%; */
- }
- .skill {
-   display: inline;
-   max-width: 15%;
-   text-align: center;
- }
+  :root {
+    --fs-h1: 2.75rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
+    --fs-body: 1.25rem;
+  }
 
 }
 
@@ -225,6 +218,7 @@ img {
 #highlight{
   background: #F3EBE3;
   margin: 0;
+  /* margin-bottom: 30px; */
 }
 
 ul.visible-list {
@@ -276,6 +270,7 @@ a.btn-primary{
     overflow:hidden;
     opacity: 1;
     transition: 0.3s;
+    margin-bottom: 5%;
 }
 
 
@@ -295,6 +290,7 @@ a.btn-secondary{
     overflow:hidden;
     opacity: 1;
     transition: 0.3s;
+    margin-bottom: 5%;
 }
 a.btn-secondary:hover {opacity: 0.6}
 a.btn-secondary:active {
@@ -315,6 +311,8 @@ a.btn-center{
   overflow:hidden;
   opacity: 1;
   transition: 0.3s;
+  margin-bottom: 5%;
+  margin-top: 2%;
 }
 a.btn-center:hover {opacity: 0.6}
 a.btn-center:active {background: #C36325;}
@@ -386,6 +384,11 @@ ul.hamburger li a{
   text-decoration: none;
   margin: 0px 20px; /*keeps list apart*/
 }
+ul.hamburger li a:hover{
+  color: #DF7A39;
+  cursor: pointer;
+}
+
 .checkbtn{
   font-size: 30px;
   float: right;
@@ -437,8 +440,12 @@ ul.hamburger{
   background: #F3EBE3;
 }
 .intro_text{
+  margin-bottom: 15px;
+}
+.sub_intro{
   font-weight: normal;
-  margin: 10px;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .arrowicon{
@@ -450,18 +457,27 @@ ul.hamburger{
 
 
 /*-------------SKILLS--------------*/
+.my_skills{
+  margin-top: 5%;
+}
+.skill{
+  margin: auto;
+  text-align: center;
+}
 
+.skill-content{
+  margin-top: 80px;
+}
 .skill-img{
-    display: inline;
+  display: inline;
   max-width: 100%;
   margin: 0;
 }
-.skill {
-  display: inline-block;
-  margin: 5%;
-  max-width: 45%;
-  text-align: center;
+ul.skill-content{
+  list-style: none;
+  padding: 0;
 }
+
 
 
 
@@ -482,19 +498,9 @@ ul.hamburger{
   display: block;
 margin-left: auto;
 margin-right: auto;
-width: 25%;
+width: 50%;
 }
 
-
-/*-------------ABOUT ME PAGE------------*/
-.aboutme_photo{
-  display: block;
-margin-left: auto;
-margin-right: auto;
-}
-.aboutme_subintro{
-    font-weight: normal;
-}
 
 
 /*------------FOOTER-----------------*/
@@ -512,6 +518,10 @@ footer {
 
 .footer-text{
   font-weight: normal;
-  /* width: 70%; */
-  margin: 5% 20%;
+  margin: 10% 20% 2% 20%;
   text-align: center;
+}
+
+.footer-container{
+    font-size: 1.5rem;
+}
